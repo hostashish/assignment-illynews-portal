@@ -35,9 +35,67 @@ body{
   font-size: 18px;
 }
 
+.news-date-author, .tags-text {
+  font-size: 14px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
+
 .news-title-heading {
-  font-family: 'Redaction';
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
   font-size: 44px;
   line-height: 110%;
+  text-align: center;
   color: #272727;
+}
+
+.news-short-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #525252;
+}
+
+.side-line {
+  height: 100%;
+}
+
+.card-tag {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 165%;
+  color: #272727;
+}
+
+.small-card-news-title {
+  font-family: 'Redaction';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+.card-text.small-card-news-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #525252;
+}
+
+.small-card-footer-inner-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #8C8C8C;
 }
