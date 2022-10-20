@@ -10,10 +10,10 @@
   </head>
   <body>
     <div class="container">
-      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 mb-4 border-bottom-0">
-        <a href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
-          <img src="assets/images/Menu.png" class="img-fluid">
-        </a>
+      <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-md-between py-3 border-bottom-0">
+        <div href="#" class="d-flex align-items-center col-md-3 mb-2 mb-md-0 text-dark text-decoration-none">
+          <small>29 December 2050, 12:00 AM , India</small>
+        </div>
   
         <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0 flex-column">
           <h1 class="brand-name-text text-center">.ILLYNEWS.</h1>
@@ -21,10 +21,40 @@
         </ul>
   
         <div class="col-md-3 text-end">
-          <button type="button" class="btn btn-dark rounded-5 subscribe-text">Subscribe</button>
+          <button type="button" class="btn btn-dark rounded-5 subscribe-text" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe Now</button>
+        </div>
+
+        <!-- Subscribe Modal -->
+        <div class="modal fade" id="subscribeModal" tabindex="-1" aria-labelledby="subscribeModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5 text-black" id="subscribeModalLabel">Subscribe Now</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <form class="row">
+                  <div class="col-md-12">
+                    <label for="exampleFormControlInput1" class="form-label small">Email Address @</label>
+                    <input type="email" class="form-control mb-2" id="exampleFormControlInput1" placeholder="name@example.com" required>
+                    </div>
+                    <div class="col-12">
+                      <div class="form-check mb-2">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                        <label class="form-check-label small" for="invalidCheck2">
+                          I Agree to terms and conditions
+                        </label>
+                      </div>
+                    </div>
+                    <button type="submit" class="btn btn-dark">Submit</button>
+                </form>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    
     <header class="p-3 text-bg-white main-menu">
       <div class="container border-top border-bottom py-3">
         <div class="d-flex flex-wrap align-items-left justify-content-center justify-content-lg-start">
@@ -44,25 +74,73 @@
       </div>
     </header>
 
-    <section class="illynews-section-one position-relative">
+    <section class="illynews-section-one">
       <div class="container">
         <div class="row">
           <div class="col-md-7">
-            <div class="card p-0 m-0 border border-0">
-              <img class="img-fluid card-img-top" src="assets/images/Rectangle-3.png">
-              <div class="card-body position-absolute top-100 end-0 translate-middle-y bg-white border border-1 mx-5 rounded-2">
-                <div class="d-flex justify-content-between py-2">
-                  <small class="news-date-author">1 Days ago • By DAVID YAFFE-BELLANY</small>
-                  <small class="tags-text">TECHNOLOGY</small>
+            <!-- Home Page Slider -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner rounded-1">
+                <div class="carousel-item active rounded-1" data-bs-interval="10000">
+                  <img src="assets/images/Rectangle-3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5 class="small-card-news-title">Accused of Cheating by an Algorithm, and a Professor She Had Never Met</h5>
+                    <p class="small-card-news-text">Some representative placeholder content for the first slide.</p>
+                  </div>
                 </div>
-                <h3 class="card-title news-title-heading py-2">How Influencers Hype Crypto, Without Disclosing Their Financial Ties</h3>
-                <p class="card-text news-short-text">Logan Paul, Paul Pierce and other celebrities have promoted risky and obscure digital currencies, sometimes failing to mention their conflicts of interest.</p>
+                <div class="carousel-item rounded-1" data-bs-interval="2000">
+                  <img src="assets/images/Rectangle-3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5 class="small-card-news-title">Accused of Cheating by an Algorithm, and a Professor She Had Never Met</h5>
+                    <p class="small-card-news-text">Some representative placeholder content for the second slide.</p>
+                  </div>
+                </div>
+                <div class="carousel-item rounded-1">
+                  <img src="assets/images/Rectangle-3.png" class="d-block w-100" alt="...">
+                  <div class="carousel-caption">
+                    <h5 class="small-card-news-title">Accused of Cheating by an Algorithm, and a Professor She Had Never Met</h5>
+                    <p class="small-card-news-text">Some representative placeholder content for the third slide.</p>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- Home Page Slider Saprater -->
+            <hr class="my-5">
+            <!-- Home Page Bottom Section -->
+            <div class="row">
+              <div class="col-md-5">
+                <h6 class="home-page-slider-bottom-section-title">Djokovic vs. Nadal: The French Open Rematch We’ve Been Waiting For</h6>
+                <p class="home-page-slider-bottom-section-text">Novak Djokovic and Rafael Nadal will continue their epic rivalry in the quarterfinal at Roland Garros.</p>
+              </div>
+              <div class="col-md-auto align-items-center mx-4">
+                <div class="vr side-line p-0"></div>
+                </div>
+              <div class="col-md-5">
+                <h6 class="home-page-slider-bottom-section-title">No Grandchild? Six Years After Son’s Wedding, These Parents are Suing.</h6>
+                <p class="home-page-slider-bottom-section-text">A couple in India are demanding that their son and daughter-in-law have a child.</p>
               </div>
             </div>
           </div>
+          
+          <!-- Side Line Virtical -->
           <div class="col-md-auto align-items-center mx-4">
           <div class="vr side-line p-0"></div>
           </div>
+
           <div class="col-md-4">
             <!-- Small Card One -->
             <div class="card rounded-0 border border-0 position-relative">
@@ -97,6 +175,266 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <section class="home-topic-of-intrest-section my-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 py-5 px-5 text-center rounded-start" style="background: rgba(0, 0, 0, 0.25);">
+            <h5 class="select-topic p-3">Select Topics of Interest</h5>
+            <button class="btn btn-light rounded-5 w-100 subscribe-text" data-bs-toggle="modal" data-bs-target="#subscribeModal">Subscribe now</button>
+          </div>
+          <div class="col-md-8 bg-dark py-5 px-5 text-center rounded-end">
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Indonesia</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Asia Pasific</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Europe</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ United Kingdom</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Environment</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Technology</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Energy</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Cryptocurrency</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Funds</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Corona</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Americas</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Aerospace & Defense</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Asian Markets</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ European Markets</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ Stocks</button>
+            <button class="btn btn-dark text-white rounded-5 border-1 border-white m-1">+ US Markets</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Most Popular Section -->
+    <section class="home-most-popular-section my-5">
+      <div class="container">
+        <h2 class="most-popular-main-title text-center my-5">Most Popular</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="most-popular-side-item my-4">
+              <h6 class="home-page-slider-bottom-section-title">Rockaway Beach Is Partially Closed. That’s Not Stopping These Visitors.</h6>
+              <p class="home-page-slider-bottom-section-text">Access is restricted along a popular stretch of the beach until at least mid-July because of work to protect the shoreline from coastal flooding.</p>
+            </div>
+            <hr>
+            <div class="most-popular-side-item my-4">
+            <h6 class="home-page-slider-bottom-section-title">‘Escalation of Secrecy’: Global Brands Seek Clarity on Xinjiang</h6>
+            <p class="home-page-slider-bottom-section-text">Companies that sourced cotton from the region in China are weighing evidence of forced labor, a lack of visibility into operations and new regulation.</p>
+            </div>
+            <hr>
+            <div class="most-popular-side-item my-4">
+            <h6 class="home-page-slider-bottom-section-title">Djokovic vs. Nadal: The French Open Rematch We’ve Been Waiting For</h6>
+            <p class="home-page-slider-bottom-section-text">Novak Djokovic and Rafael Nadal will continue their epic rivalry in the quarterfinal at Roland Garros on Tuesday.</p>
+            </div>
+            <hr>
+            <div class="most-popular-side-item my-4">
+            <h6 class="home-page-slider-bottom-section-title">No Grandchild? Six Years After Son’s Wedding, These Parents are Suing.</h6>
+            <p class="home-page-slider-bottom-section-text">A couple in India are demanding that their son and daughter-in-law have a child or pay them $650,000 in damages.</p>
+            </div>
+            <hr>
+          </div>
+          
+          <div class="col-md-auto align-items-center mx-4">
+            <div class="vr side-line p-0"></div>
+          </div>
+          
+          <div class="col-md-7">
+            <div class="card border-0">
+              <img src="assets/images/Rectangle-5.png" class="card-img-top" alt="...">
+              <div class="d-flex justify-content-between py-2">
+                <small class="most-popular-news-date-author">1 Days ago • By DAVID YAFFE-BELLANY</small>
+                <small class="most-popular-tags-text">A R C H I T E C T U R E</small>
+              </div>
+              <div class="card-body py-2 px-0">
+                <h3 class="card-title most-popular-card-title">Saving Modernism in the Hamptons</h3>
+                <p class="card-text most-popular-card-text">Timothy Godbold, an interior designer based in Southampton, became a Hamptons preservationist after learning that so many modernist houses have been torn down.</p>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="flex-shrink-0">
+                    <img src="assets/images/Rectangle-6.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <small class="most-popular-news-date-author-small">May 27, 2022 • By KASHMIR HILL</small>
+                    <p class="most-popular-news-title-small">What Gun Violence Does to Our Mental Health</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="d-flex align-items-center mb-2">
+                  <div class="flex-shrink-0">
+                    <img src="assets/images/Rectangle-6.png" class="img-fluid" alt="...">
+                  </div>
+                  <div class="flex-grow-1 ms-3">
+                    <small class="most-popular-news-date-author-small">May 27, 2022 • By KASHMIR HILL</small>
+                    <p class="most-popular-news-title-small">Seven Great Biking Cities (and Which Trails to Ride)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Current Issue Section -->
+    <section class="current-issue-section my-5">
+      <div class="container">
+        <h2 class="current-issue-main-title text-center my-5">Current Issue</h2>
+        <div class="row">
+          <div class="col-md-7">
+            <div class="row justify-content-center">
+              <div class="col-md-4">
+                <img src="assets/images/Rectangle-7.png" class="img-fluid my-2" alt=""/>
+              </div>
+              <div class="col-md-8">
+                <h3 class="current-issue-side-col-title my-2">In Colombia, a Leftist and a Right-Wing Populist Head for June Runoff</h3>
+                <p class="current-issue-side-col-text">The results in the first round of voting delivered a stunning blow to Colombia’s dominant conservative political class.</p>
+                <small class="current-issue-side-col-date-author">May 27, 2022 • By KASHMIR HILL</small>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="assets/images/Rectangle-7.png" class="img-fluid my-2" alt=""/>
+              </div>
+              <div class="col-md-8">
+                <h3 class="current-issue-side-col-title my-2">A Face Search Engine Anyone Can Use Is Alarmingly Accurate</h3>
+                <p class="current-issue-side-col-text">PimEyes is a paid service that finds photos of a person from across the internet, including some the person may not want exposed.</p>
+                <small class="current-issue-side-col-date-author">May 27, 2022 • By KASHMIR HILL</small>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="assets/images/Rectangle-7.png" class="img-fluid my-2" alt=""/>
+              </div>
+              <div class="col-md-8">
+                <h3 class="current-issue-side-col-title my-2">F.B.I. Investigates Basquiat Paintings Shown at Orlando Museum of Art</h3>
+                <p class="current-issue-side-col-text">The authenticity of 25 paintings, largely unseen before the exhibition’s February opening, is being investigated.</p>
+                <small class="current-issue-side-col-date-author">May 27, 2022 • By KASHMIR HILL</small>
+              </div>
+            </div>
+            <hr>
+            <div class="row">
+              <div class="col-md-4">
+                <img src="assets/images/Rectangle-7.png" class="img-fluid my-2" alt=""/>
+              </div>
+              <div class="col-md-8">
+                <h3 class="current-issue-side-col-title my-2">What Lia Thomas Could Mean for Women’s Elite Sports</h3>
+                <p class="current-issue-side-col-text">Although the number of top transgender athletes is small, the disagreements are profound.</p>
+                <small class="current-issue-side-col-date-author">May 27, 2022 • By KASHMIR HILL</small>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-auto align-items-center mx-4">
+            <div class="vr side-line p-0"></div>
+          </div>
+          
+          <!-- Current Issue Thoughts Slider -->
+          <div class="col-md-4">
+            <!-- Current Issue Thoughts Slider One -->
+            <div id="carouselExampleIndicatorsOne" class="carousel slide rounded-2 p-5" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p class="carousel-item-text">“It’s funny when I’m cyber bullied (anonymously) because when people do it to me, I don’t think of how much I want to hurt them or punch them in the face like my friends do…but I go on this site and write a quote to them back, hoping to kill them with kindness” </p>
+                  <span class="carousel-item-author">- Anna Maria Chavez</span>
+                </div>
+                <div class="carousel-item">
+                  <p class="carousel-item-text">“It’s funny when I’m cyber bullied (anonymously) because when people do it to me, I don’t think of how much I want to hurt them or punch them in the face like my friends do…but I go on this site and write a quote to them back, hoping to kill them with kindness” </p>
+                  <span class="carousel-item-author">- Anna Maria Chavez</span>
+                </div>
+                <div class="carousel-item">
+                  <p class="carousel-item-text">“It’s funny when I’m cyber bullied (anonymously) because when people do it to me, I don’t think of how much I want to hurt them or punch them in the face like my friends do…but I go on this site and write a quote to them back, hoping to kill them with kindness” </p>
+                  <span class="carousel-item-author">- Anna Maria Chavez</span>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsOne" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+
+            <!-- Current Issue Thoughts Slider Two -->
+            <div id="carouselExampleIndicatorsTwo" class="carousel slide rounded-2 p-5 mt-5" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <p class="carousel-item-text">“It’s funny when I’m cyber bullied (anonymously) because when people do it to me, I don’t think of how much I want to hurt them or punch them in the face like my friends do…but I go on this site and write a quote to them back, hoping to kill them with kindness” </p>
+                  <span class="carousel-item-author">- Anna Maria Chavez</span>
+                </div>
+                <div class="carousel-item">
+                  <p class="carousel-item-text">“It’s funny when I’m cyber bullied (anonymously) because when people do it to me, I don’t think of how much I want to hurt them or punch them in the face like my friends do…but I go on this site and write a quote to them back, hoping to kill them with kindness” </p>
+                  <span class="carousel-item-author">- Anna Maria Chavez</span>
+                </div>
+                <div class="carousel-item">
+                  <p class="carousel-item-text">“It’s funny when I’m cyber bullied (anonymously) because when people do it to me, I don’t think of how much I want to hurt them or punch them in the face like my friends do…but I go on this site and write a quote to them back, hoping to kill them with kindness” </p>
+                  <span class="carousel-item-author">- Anna Maria Chavez</span>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicatorsTwo" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <hr class="my-5">
+        <div class="row d-flex justify-content-around my-5">
+          <div class="col-md-2">
+            <img src="assets/images/Rectangle-8.png" class="img-fluid" alt=""/>
+            <span>Firman for Illiyin Studio</span>
+            <p>'Flying Shark' photo changed this man's life</p>
+          </div>
+          <div class="col-md-auto align-items-center mx-4">
+            <div class="vr side-line p-0"></div>
+          </div>
+          <div class="col-md-2">
+            <img src="assets/images/Rectangle-8.png" class="img-fluid" alt=""/>
+            <span>Firman for Illiyin Studio</span>
+            <p>They survived for thousands of years, but these cities could vanish</p>
+          </div>
+          <div class="col-md-auto align-items-center mx-4">
+            <div class="vr side-line p-0"></div>
+          </div>
+          <div class="col-md-2">
+            <img src="assets/images/Rectangle-8.png" class="img-fluid" alt=""/>
+            <span>Firman for Illiyin Studio</span>
+            <p>Cliffhanger: Golfer hits wonder shot from edge of cliff</p>
+          </div>
+          <div class="col-md-auto align-items-center mx-4">
+            <div class="vr side-line p-0"></div>
+          </div>
+          <div class="col-md-2">
+            <img src="assets/images/Rectangle-8.png" class="img-fluid" alt=""/>
+            <span>Firman for Illiyin Studio</span>
+            <p>Astronaut reveals 'alarming' view of Earth from space</p>
+          </div>
+        </div>
+        <hr class="my-5">
       </div>
     </section>
 

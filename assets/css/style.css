@@ -10,7 +10,7 @@
 }
 
 body{
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -52,7 +52,7 @@ body{
 }
 
 .news-short-text {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -65,7 +65,7 @@ body{
 }
 
 .card-tag {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 10px;
@@ -74,7 +74,7 @@ body{
 }
 
 .small-card-news-title {
-  font-family: 'Redaction';
+  font-family: 'Redaction-Regular';
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
@@ -83,7 +83,7 @@ body{
 }
 
 .card-text.small-card-news-text {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -92,10 +92,156 @@ body{
 }
 
 .small-card-footer-inner-text {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 13px;
   line-height: 160%;
   color: #8C8C8C;
+}
+
+.carousel-indicators-custom-postion {
+  justify-content: start !important;
+  top: 37rem !important;
+  left: 0rem !important;
+  right: 0rem !important;
+  margin-left: 0% !important;
+}
+
+h6.home-page-slider-bottom-section-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 120%;
+  color: #272727;
+}
+
+p.home-page-slider-bottom-section-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #525252;
+}
+
+h5.select-topic {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 120%;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+h2.most-popular-main-title, .current-issue-main-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  color: #272727;
+}
+
+.most-popular-news-date-author, .most-popular-tags-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
+
+h3.card-title.most-popular-card-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 110%;
+  color: #272727;
+}
+
+p.card-text.most-popular-card-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #525252;
+}
+
+small.most-popular-news-date-author-small{
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
+
+p.most-popular-news-title-small {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+h3.current-issue-side-col-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 115%;
+  color: #272727;
+}
+
+p.current-issue-side-col-text {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #525252;
+}
+
+small.current-issue-side-col-date-author {
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
+
+div#carouselExampleIndicatorsOne {
+  /* height: 520px; */
+  height:auto;
+  background: #DBD6C3;
+}
+
+p.carousel-item-text {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+span.carousel-item-author {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+div#carouselExampleIndicatorsTwo {
+  height:auto;
+  background: #EBE9EA;
 }
