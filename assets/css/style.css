@@ -245,3 +245,88 @@ div#carouselExampleIndicatorsTwo {
   height:auto;
   background: #EBE9EA;
 }
+
+.img-fluid.cibb-img {
+  width:100%;
+  height:auto;
+}
+
+p.cibb-small-text.small {
+  font-family: 'Inter';
+  font-weight: 400;
+  font-size: 12px;
+  color: #8C8C8C;
+  text-align: right;
+}
+
+h5.cibb-heading {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+h2.latest-news-main-title.text-center.my-5 {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  color: #272727;
+}
+
+h6.news-latest-first-col-heading {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+small.latest-news-date-author, small.latest-news-tags-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
+
+h3.card-title.latest-news-card-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 115%;
+  color: #272727;
+}
+
+p.card-text.latest-news-card-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #525252;
+}
+
+h6.latest-mews-third-col-heading {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+label.latest-news-third-col-date-author {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
