@@ -330,3 +330,112 @@ label.latest-news-third-col-date-author {
   line-height: 160%;
   color: #8C8C8C;
 }
+
+p.latest-news-bottom-item-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+h2.video-section-main-title.text-center.my-5 {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 110%;
+  color: #272727;
+}
+
+.video-card-author {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
+
+h5.card-title.video-news-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 115%;
+  color: #272727;
+}
+
+.card-text.video-news-description {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #525252;
+}
+
+span.card-subtitle.mb-2.text-muted.video-card-sec-col-author.my-2 {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 160%;
+  color: #8C8C8C;
+}
+
+h6.card-title.video-news-sec-col-title {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 120%;
+  color: #272727;
+}
+
+h5.sign-up-section-heading-text {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 115%;
+  color: #FFFFFF;
+}
+
+span.sign-up-for-update-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  text-decoration-line: underline;
+  color: #FFFFFF;
+}
+
+a.footer-brand-logo.text-decoration-none {
+  font-family: 'Redaction-Regular';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 47.5381px;
+  line-height: 100%;
+  color: #272727;
+}
+
+p.footer-text {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  color: #525252;
+}
+
+h5.footer-heading {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 140%;
+  color: #272727;
+}
